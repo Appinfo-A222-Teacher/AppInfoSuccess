@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * 分页工具类
  * 
- * @author Tequila
+ * @author Charles7c
  *
  * @param <T>
  */

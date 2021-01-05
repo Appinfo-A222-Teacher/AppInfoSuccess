@@ -44,14 +44,14 @@
 
     <!--4.静态资源放行-方法1-->
     <mvc:resources location="/statics/" mapping="/statics/**"/>
+    <!--4.静态资源放行-方法2-->
+    <!--<mvc:default-servlet-handler />-->
 
     <!--文件上传配置-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <property name="maxUploadSize" value="500000"/>
         <property name="defaultEncoding" value="UTF-8"/>
     </bean>
-
-
     <!--全局异常处理-->
     <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
         <!--异常映射-->
@@ -61,4 +61,7 @@
             </props>
         </property>
     </bean>
+
+
+
 </beans>    

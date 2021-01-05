@@ -10,6 +10,7 @@ import javax.annotation.Resource;
 public class DevServiceImpl implements DevService {
     @Resource
     private DevMapper devMapper;
+
     @Override
     public DevUser doLogin(String devCode, String devPassword) {
         return devMapper.doLogin(devCode,devPassword);

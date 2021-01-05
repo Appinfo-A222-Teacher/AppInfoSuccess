@@ -43,7 +43,7 @@ public class MD5 {
         return random.nextInt(max)%(max-min+1) + min;		
 	}
 	public static void main(String[] args) {
-		System.out.println(MD5.getMd5("123456",16));
+		System.out.println(MD5.getMd5("helloadsfdsffsf",6));
 		System.out.println(getRandomCode());
 	}
 
