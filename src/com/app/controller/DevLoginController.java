@@ -22,7 +22,15 @@ public class DevLoginController {
     @Resource
     private DevService devService;
 
-
+    /**
+     * 实现注销操作
+     */
+    @RequestMapping("/logout")
+    public String logOut( HttpSession session){
+        // 删除session
+        session.removeAttribute("devUserSession");
+        return "devlogin";
+    }
 
 
     /**
